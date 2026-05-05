@@ -1,7 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap');
+
+:root {
+    /* Primary Colors */
+    --primary-h: 215;
+    --primary-s: 100%;
+    --primary-l: 55%;
+    --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+    --primary-light: hsl(var(--primary-h), var(--primary-s), 95%);
+    --primary-dark: hsl(var(--primary-h), var(--primary-s), 40%);
+
+    /* Neutral Colors */
+    --bg: hsl(215, 25%, 98%);
+    --surface: hsl(0, 0%, 100%);
+    --text-main: hsl(215, 25%, 15%);
+    --text-muted: hsl(215, 15%, 45%);
+    --border: hsl(215, 20%, 90%);
+
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --glass-blur: 12px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 12px 24px -4px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 20px 40px -8px rgba(0, 0, 0, 0.12);
+
+    /* Transitions */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #333;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg);
+    color: var(--text-main);
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -11,11 +51,19 @@ main {
     flex: 1;
 }
 
-/* Animation for elements to fade in and move up */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: var(--text-main);
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+}
+
+/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
@@ -23,323 +71,194 @@ main {
     }
 }
 
+.fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Header & Navigation */
+header.p-3.bg-dark {
+    background: var(--glass-bg) !important;
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    border-bottom: 1px solid var(--glass-border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .text-white {
+    color: var(--text-main) !important;
+}
+
+header .nav-link {
+    font-weight: 500;
+    color: var(--text-muted) !important;
+    transition: var(--transition);
+    padding: 0.5rem 1rem !important;
+}
+
+header .nav-link:hover, 
+header .nav-link.active {
+    color: var(--primary) !important;
+}
+
+header .fs-4 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--primary) !important;
+}
+
+/* Hero Section */
 .hero-section {
-    /* background-color: #f8f9fa; */ /* Replaced with image */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero_background.jpg');
+    position: relative;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%), url('../images/hero_background.jpg');
     background-size: cover;
     background-position: center;
-    padding: 10rem 0; /* Adjusted padding for more space */
-    margin-bottom: 0;
-    min-height: 100vh; /* Make it full height */
+    background-attachment: fixed; /* Parallax Effect */
+    min-height: 100vh;
     display: flex;
-    align-items: center; /* Center content vertically */
-    overflow: hidden; /* Prevents content from showing before animation */
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: -72px;
+    padding-top: 72px;
 }
 
 .hero-section h1 {
-    font-size: 4.5rem; /* Larger font size for the main title */
-    font-weight: 700; /* Bolder font weight */
-    color: #ffffff; /* White text for contrast */
-    opacity: 0; /* Set initial state for animation */
-    animation: fadeInUp 0.8s ease-out 0.3s forwards;
+    font-size: clamp(3.5rem, 10vw, 6rem);
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.04em;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .hero-section p.lead {
-    font-size: 1.75rem; /* Larger font size for description */
-    color: #f8f9fa; /* Lighter white for description */
-    max-width: 700px; /* Limit width for readability */
-    margin: 1rem auto 2rem auto; /* Center and add vertical margin */
-    opacity: 0; /* Set initial state for animation */
-    animation: fadeInUp 0.8s ease-out 0.6s forwards;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 3.5rem;
-    }
-    .hero-section p.lead {
-        font-size: 1.25rem;
-    }
-    .hero-section {
-        padding: 8rem 0;
-    }
-    #room-main-image {
-        height: 300px;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.75rem;
-    }
-    p {
-        font-size: 1rem;
-    }
-    .lead {
-        font-size: 1.1rem;
-    }
-    .bg-white {
-        padding-bottom: 1rem; /* Reduce bottom padding for key features section */
-    }
-    .nav-link {
-        font-size: 0.85rem; /* Smaller font size for nav links on small screens */
-        padding-left: 0.5rem !important;
-        padding-right: 0.5rem !important;
-    }
-}
-
-
-/* Container adjustments */
-.container {
-    max-width: 1200px;
-}
-
-
-
-/* Room Main Image */
-#room-main-image {
-    width: 100%;
-    max-height: 500px; /* Max height for consistency */
-    height: auto; /* Allow natural scaling */
-    object-fit: cover; /* Cover the area, cropping if necessary */
-    border-radius: 20px; /* Increased for more rounded corners */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    color: #222;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-/* Text styles */
-p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-.lead {
-    font-size: 1.25rem;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 900px;
+    margin: 0 auto 3rem;
     font-weight: 400;
 }
 
-/* Horizontal Rule */
-hr {
-    border-top: 1px solid #eee;
+/* Cards & Sections */
+section {
+    padding: 100px 0;
 }
 
-/* Key Details Section */
-.bi {
-    font-size: 1.2rem;
-    vertical-align: middle;
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: var(--shadow-sm);
 }
 
-/* Amenities Section */
-#room-amenities ul {
-    padding-left: 0;
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px -12px rgba(0,0,0,0.12);
+    border-color: var(--primary);
 }
 
-#room-amenities li {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-    color: #555;
+.card-img-top {
+    height: 240px;
+    object-fit: cover;
+    transition: var(--transition);
 }
 
-/* Host Information */
-.rounded-circle {
-    border: 1px solid #ddd;
+.card:hover .card-img-top {
+    transform: scale(1.05);
 }
 
-/* Booking Card */
-.card.shadow-sm {
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+.card-body {
+    padding: 2rem;
 }
 
 .card-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #007bff; /* Primary color for price */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.form-label {
+.badge {
+    padding: 0.6em 1em;
+    border-radius: 8px;
     font-weight: 600;
-    color: #444;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.8rem 1.8rem;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: var(--transition);
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    font-weight: 600;
-    padding: 0.75rem 1.25rem;
-    border-radius: 8px;
+    background-color: var(--primary);
+    border: none;
+    box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.3);
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: var(--primary-dark);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px -5px rgba(37, 99, 235, 0.4);
 }
 
-.btn-outline-primary {
-    color: #007bff;
-    border-color: #007bff;
-    font-weight: 600;
-    border-radius: 8px;
-}
-
-.btn-outline-primary:hover {
-    background-color: #007bff;
-    color: #fff;
-}
-
-/* Sticky booking card for larger screens */
-@media (min-width: 992px) {
-    .sticky-top {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 80px; /* Adjust based on navbar height */
-    }
-}
-
-.img-shadow {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Revert border from room cards in rooms.html */
-#room-list-container .card {
-    border: 1px solid rgba(0,0,0,.125);
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
-}
-
-/* Styles for rooms.html to ensure uniform card heights */
-#room-list-container .card-img-top {
-    height: 225px;
-    width: 100%;
-    object-fit: cover;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333; /* Dark background for footer */
-    color: #fff; /* White text color */
-    text-align: center;
-    padding: 1em 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 3rem;
-}
-
-footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center;
-}
-
-footer p {
-    margin-bottom: 1rem; /* Space below copyright text */
-    color: #ffffff; /* Ensure copyright text is white */
-}
-
-.social-links {
-    margin-top: 1rem; /* Space above social links */
-}
-
-.social-links a {
-    color: #ffffff; /* White color for icons */
-    font-size: 0.8rem; /* Size of social icons */
-    margin: 0 0.8rem; /* Space between icons */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.social-links a:hover {
-    color: #007bff; /* Change color on hover */
-}
-
-.policy-links {
-    margin-top: 0.5rem; /* Space above policy links */
-    margin-bottom: 0.5rem; /* Space below policy links */
-}
-
-.policy-links a {
-    color: #ffffff; /* White color for links */
-    font-size: 0.9rem; /* Smaller font size for policy links */
-    margin: 0 0.5rem; /* Space between links */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.policy-links a:hover {
-    color: #007bff; /* Change color on hover */
-}
-
-
-/* Map Links Styles */
-.map-links {
-    display: flex;
-    flex-wrap: nowrap; /* 강제로 한 줄에 표시 */
-    justify-content: center;
-    gap: 1rem; /* 링크 사이 간격 조절 */
-    margin-top: 1rem; /* 링크 위 여백 */
-    margin-bottom: 1rem; /* 링크 아래 여백 */
-    width: 100%;
-}
-
-/* Responsive Map Button Font Size */
-.map-btn {
-    font-size: 1rem; /* Default font size for larger screens */
-    padding: 0.5rem 0.8rem; /* Default padding */
-}
-
-@media (max-width: 992px) {
-    .map-btn {
-        font-size: 0.9rem;
-        padding: 0.45rem 0.75rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .map-btn {
-        font-size: 0.8rem;
-        padding: 0.4rem 0.7rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .map-btn {
-        font-size: 0.9rem; /* Further increased for better readability on mobile */
-        padding: 0.45rem 0.75rem; /* Adjusted padding for mobile */
-    }
-}
-
-/* Facility Thumbnail Styling */
+/* Facilities & Amenities */
 .facility-img-wrapper {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 0.5rem;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .facility-img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: var(--transition);
 }
 
-/* Carousel Image Uniform Size */
-.carousel-item img {
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    width: 100%;
+.facility-img-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: var(--surface) !important;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted) !important;
+    padding: 4rem 0 2rem !important;
+    text-align: left;
+}
+
+footer p {
+    color: var(--text-muted) !important;
+    font-size: 0.95rem;
+}
+
+footer .nav-link {
+    color: var(--text-muted) !important;
+}
+
+footer .nav-link:hover {
+    color: var(--primary) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    section {
+        padding: 4rem 0;
+    }
+    
+    .hero-section {
+        min-height: 80vh;
+    }
 }
