@@ -22,205 +22,173 @@
     <meta name="twitter:image" content="https://hitomorrow.netlify.app/images/hero_background.jpg">
     
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="../images/icons/favicon.svg">
+    <link rel="manifest" href="../site.webmanifest">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="../css/style.css?v=2.2">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="/js/script.min.js" defer></script>
+    <script src="../js/script.min.js" defer></script>
 </head>
 <body>
-    <header class="p-3 bg-dark text-white">
-  <div class="container">
-    <div class="d-flex flex-wrap align-items-center justify-content-between">
-      <a href="/en/index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-        <span class="fs-4">HiTomorrow</span>
-      </a>
-      <ul class="nav ms-auto mb-2 mb-md-0">
-        <li><a href="/en/index.html" class="nav-link px-2 text-white">Home</a></li>
-        <li><a href="/en/rooms.html" class="nav-link px-2 text-white">Rooms</a></li>
-        <li><a href="/en/contact.html" class="nav-link px-2 text-white">Contact</a></li>
-        <li><a href="/index.html" class="nav-link px-2 text-warning">한국어</a></li>
-      </ul>
-    </div>
-  </div>
-</header>
+    <!-- Floating Navigation -->
+    <nav class="nav-floating">
+        <div class="brand-text">HiTomorrow</div>
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="rooms.html" class="nav-link">Rooms</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="../index.html" class="nav-link text-warning">KR</a>
+    </nav>
 
     <main>
         
-    <!-- 메인 콘텐츠 -->
-    <header class="hero-section text-center">
+    <!-- Hero Section (Asymmetric) -->
+    <section class="hero-asymmetric">
         <div class="container">
-            <h1 class="display-3 fw-bold">Home Subscription</h1>
-            <p class="lead">HiTomorrow</p>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 hero-content fade-in-up">
+                    <h1 class="display-1 fw-bold mb-4">A New Definition<br>of Space</h1>
+                    <p class="lead mb-5 text-muted" style="font-size: 1.25rem; line-height: 1.6; word-break: keep-all;">
+                        Subscribe to premium living spaces for as long as you want, without cumbersome contracts. The smartest choice for tomorrow's life, HiTomorrow.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="rooms.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow-lg">Explore Spaces</a>
+                        <a href="contact.html" class="btn btn-outline-primary btn-lg px-5 py-3 rounded-pill">Quick Inquiry</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="hero-image-wrapper">
+                        <img src="../images/hero_background.jpg" alt="Actual View from HiTomorrow">
+                        <div class="position-absolute bottom-0 start-0 p-4 w-100 bg-gradient-dark text-white">
+                            <p class="small mb-0 opacity-75">Actual View from Our Room</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <!-- About Section -->
+    <!-- Why HiTomorrow Section (Bento Grid) -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5 fade-in-up">
+                <h2 class="display-6 fw-bold">Why HiTomorrow?</h2>
+                <p class="text-muted">The smartest solution for tomorrow's living</p>
+            </div>
+            
+            <div class="bento-grid">
+                <div class="bento-item large fade-in-up" style="animation-delay: 0.1s; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white;">
+                    <div>
+                        <i class="bi bi-geo-alt-fill fs-1 mb-4 d-block"></i>
+                        <h3 class="h2 fw-bold mb-3">Premium Location</h3>
+                        <p class="opacity-75">Enjoy the overwhelming view overlooking Goyang Sports Complex and KINTEX, along with the convenience of being a business hub.</p>
+                    </div>
+                    <a href="rooms.html" class="btn btn-light rounded-pill px-4">See More</a>
+                </div>
+                
+                <div class="bento-item medium fade-in-up" style="animation-delay: 0.2s;">
+                    <div>
+                        <h3 class="h4 fw-bold mb-3">Fully Equipped</h3>
+                        <p class="text-muted small">From appliances and furniture to kitchenware. Start your daily life immediately just by moving in.</p>
+                    </div>
+                    <i class="bi bi-house-heart-fill fs-2 text-primary"></i>
+                </div>
+                
+                <div class="bento-item fade-in-up" style="animation-delay: 0.3s;">
+                    <div>
+                        <h3 class="h5 fw-bold mb-3">Flexible Contracts</h3>
+                        <p class="text-muted small">Starting from one month.</p>
+                    </div>
+                    <i class="bi bi-calendar-check-fill fs-3 text-primary"></i>
+                </div>
+                
+                <div class="bento-item fade-in-up" style="animation-delay: 0.4s;">
+                    <div>
+                        <h3 class="h5 fw-bold mb-3">Smart Security</h3>
+                        <p class="text-muted small">Non-contact IoT system.</p>
+                    </div>
+                    <i class="bi bi-shield-lock-fill fs-3 text-primary"></i>
+                </div>
+                
+                <div class="bento-item full fade-in-up" style="animation-delay: 0.5s; background: var(--text-main); color: white;">
+                    <div>
+                        <h3 class="h4 fw-bold mb-3">Next-Level Experience</h3>
+                        <p class="opacity-75">Beyond a simple room, we aim for a premium community space that supports your immersion and growth.</p>
+                    </div>
+                    <a href="contact.html" class="text-white text-decoration-none small">Contact Us <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Facilities -->
     <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h2 class="fw-bold">A New Way to Your Own Cozy Space</h2>
-                    <p class="text-muted">Subscribe to your own space</p>
-                    <a href="/contact.html" class="btn btn-primary">Learn More</a>
-                </div>
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <img src="/images/about_us.jpg"
-                        class="img-fluid rounded img-shadow" alt="About us image" loading="lazy">
-                </div>
+        <div class="container py-5">
+            <div class="mb-5 fade-in-up text-center">
+                <h2 class="display-6 fw-bold">Location & Facilities</h2>
+                <p class="text-muted">Premium life in the center of Ilsan</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Key Features Section -->
-    <section class="pt-3 bg-white">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-3 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-subway fa-3x mb-3 text-primary"></i>
-                            <h3 class="h5 fw-bold">Convenient Accessibility</h3>
-                            <p class="text-muted">Close to the subway station for convenient public transport.</p>
-                        </div>
+            
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6 fade-in-up">
+                    <div class="mb-4">
+                        <h3 class="h4 fw-bold mb-4">Nearby Facilities</h3>
                     </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-couch fa-3x mb-3 text-primary"></i>
-                            <h3 class="h5 fw-bold">Fully Furnished</h3>
-                            <p class="text-muted">All necessary furniture and appliances are provided.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-calendar-alt fa-3x mb-3 text-primary"></i>
-                            <h3 class="h5 fw-bold">Flexible Contracts</h3>
-                            <p class="text-muted">Short-term rentals of one month or less, with a minimal deposit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body text-center">
-                            <i class="fas fa-door-open fa-3x mb-3 text-primary"></i>
-                            <h3 class="h5 fw-bold">Contactless &amp; Free Parking</h3>
-                            <p class="text-muted">A convenient and safe non-contact system with free parking.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="py-1">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body">
-                            <h2 class="text-center fw-bold mb-5">Nearby Facilities</h2>
-                            <div class="row text-center g-2">
-                                
-                                <div class="col-4">
-                                    <a href="#" class="d-block text-decoration-none" data-bs-toggle="modal"
-                                        data-bs-target="#imageModal" data-large-src="/images/facilities/kintex+Large.jpg">
-                                        <div class="facility-img-wrapper">
-                                            <img src="/images/facilities/kintex.jpg"
-                                                class="rounded" alt="KINTEX" loading="lazy">
-                                        </div>
-                                        <p class="small text-muted mt-1 mb-0">KINTEX</p>
-                                    </a>
-                                </div>
-                                
-                                <div class="col-4">
-                                    <a href="#" class="d-block text-decoration-none" data-bs-toggle="modal"
-                                        data-bs-target="#imageModal" data-large-src="/images/facilities/Goyang+Sports+Large.jpg">
-                                        <div class="facility-img-wrapper">
-                                            <img src="/images/facilities/Goyang+Sports.jpg"
-                                                class="rounded" alt="Goyang Sports Complex" loading="lazy">
-                                        </div>
-                                        <p class="small text-muted mt-1 mb-0">Goyang Sports Complex</p>
-                                    </a>
-                                </div>
-                                
-                                <div class="col-4">
-                                    <a href="#" class="d-block text-decoration-none" data-bs-toggle="modal"
-                                        data-bs-target="#imageModal" data-large-src="/images/facilities/Starfield+MARKET+Large.jpg">
-                                        <div class="facility-img-wrapper">
-                                            <img src="/images/facilities/Starfield+MARKET.jpg"
-                                                class="rounded" alt="Starfield Market" loading="lazy">
-                                        </div>
-                                        <p class="small text-muted mt-1 mb-0">Starfield Market</p>
-                                    </a>
-                                </div>
-                                
-                                <div class="col-4">
-                                    <a href="#" class="d-block text-decoration-none" data-bs-toggle="modal"
-                                        data-bs-target="#imageModal" data-large-src="/images/facilities/One+Mount+Large.jpg">
-                                        <div class="facility-img-wrapper">
-                                            <img src="/images/facilities/One+Mount.jpg"
-                                                class="rounded" alt="One Mount" loading="lazy">
-                                        </div>
-                                        <p class="small text-muted mt-1 mb-0">One Mount</p>
-                                    </a>
-                                </div>
-                                
-                                <div class="col-4">
-                                    <a href="#" class="d-block text-decoration-none" data-bs-toggle="modal"
-                                        data-bs-target="#imageModal" data-large-src="/images/facilities/Paik+Hospital+Large.jpg">
-                                        <div class="facility-img-wrapper">
-                                            <img src="/images/facilities/Paik+Hospital.jpg"
-                                                class="rounded" alt="Paik Hospital" loading="lazy">
-                                        </div>
-                                        <p class="small text-muted mt-1 mb-0">Paik Hospital</p>
-                                    </a>
-                                </div>
-                                
-                                <div class="col-4">
-                                    <a href="#" class="d-block text-decoration-none" data-bs-toggle="modal"
-                                        data-bs-target="#imageModal" data-large-src="/images/facilities/Lake+Park+Large.jpg">
-                                        <div class="facility-img-wrapper">
-                                            <img src="/images/facilities/Lake+Park.jpg"
-                                                class="rounded" alt="Lake Park" loading="lazy">
-                                        </div>
-                                        <p class="small text-muted mt-1 mb-0">Lake Park</p>
-                                    </a>
-                                </div>
-                                
+                    
+                    <div class="row g-4">
+                        <div class="col-6 col-md-4">
+                            <div class="facility-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal" data-large-src="../images/facilities/kintex+Large.jpg">
+                                <img src="../images/facilities/kintex+Large.jpg" alt="KINTEX">
                             </div>
+                            <p class="small text-center text-muted mt-2">KINTEX</p>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="facility-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal" data-large-src="../images/facilities/Goyang+Sports+Large.jpg">
+                                <img src="../images/facilities/Goyang+Sports+Large.jpg" alt="Goyang Sports Complex">
+                            </div>
+                            <p class="small text-center text-muted mt-2">Sports Complex</p>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="facility-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal" data-large-src="../images/facilities/Starfield+MARKET+Large.jpg">
+                                <img src="../images/facilities/Starfield+MARKET+Large.jpg" alt="Starfield MARKET">
+                            </div>
+                            <p class="small text-center text-muted mt-2">Starfield</p>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="facility-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal" data-large-src="../images/facilities/One+Mount+Large.jpg">
+                                <img src="../images/facilities/One+Mount+Large.jpg" alt="One Mount">
+                            </div>
+                            <p class="small text-center text-muted mt-2">One Mount</p>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="facility-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal" data-large-src="../images/facilities/Paik+Hospital+Large.jpg">
+                                <img src="../images/facilities/Paik+Hospital+Large.jpg" alt="Ilsan Paik Hospital">
+                            </div>
+                            <p class="small text-center text-muted mt-2">Paik Hospital</p>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="facility-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal" data-large-src="../images/facilities/Lake+Park+Large.jpg">
+                                <img src="../images/facilities/Lake+Park+Large.jpg" alt="Ilsan Lake Park">
+                            </div>
+                            <p class="small text-center text-muted mt-2">Lake Park</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <iframe
-                        src="https://maps.google.com/maps?q=37.676138,126.746055&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        class="rounded"></iframe>
-                    <div class="map-links">
-                        <a href="https://maps.app.goo.gl/LjkcUrADVAZHmwJ76" target="_blank"
-                            class="btn btn-outline-primary map-btn">
-                            <i class="fas fa-map-marked-alt me-2"></i>Google Maps
-                        </a>
-                        <a href="https://naver.me/x2jSHOqw" target="_blank" class="btn btn-outline-primary map-btn">
-                            <i class="fas fa-map-marked-alt me-2"></i>Naver Map
-                        </a>
-                        <a href="https://kko.kakao.com/wClWe-DcNe" target="_blank"
-                            class="btn btn-outline-primary map-btn">
-                            <i class="fas fa-map-marked-alt me-2"></i>Kakao Map
-                        </a>
-                        <button type="button" class="btn btn-outline-primary map-btn" data-bs-toggle="modal" data-bs-target="#directionsModal">
-                            <i class="fas fa-camera me-2"></i>Directions
+
+                <div class="col-md-6 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="rounded-4 overflow-hidden shadow-lg mb-4">
+                        <iframe src="https://maps.google.com/maps?q=37.676138,126.746055&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="map-btn-group mt-4">
+                        <a href="https://maps.app.goo.gl/LjkcUrADVAZHmwJ76" target="_blank" class="btn btn-outline-primary btn-sm">Google Maps</a>
+                        <a href="https://naver.me/x2jSHOqw" target="_blank" class="btn btn-outline-primary btn-sm">Naver Map</a>
+                        <a href="https://kko.kakao.com/wClWe-DcNe" target="_blank" class="btn btn-outline-primary btn-sm">Kakao Map</a>
+                        <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#directionsModal">
+                            <i class="bi bi-camera-fill me-1"></i> Directions
                         </button>
                     </div>
                 </div>
@@ -260,13 +228,13 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="/images/directions/00.jpg" class="d-block w-100" alt="Directions 1">
+                                <img src="../images/directions/00.jpg" class="d-block w-100" alt="Directions 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/directions/01.jpg" class="d-block w-100" alt="Directions 2">
+                                <img src="../images/directions/01.jpg" class="d-block w-100" alt="Directions 2">
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/directions/02.jpg" class="d-block w-100" alt="Directions 3">
+                                <img src="../images/directions/02.jpg" class="d-block w-100" alt="Directions 3">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#directionsCarousel" data-bs-slide="prev">
@@ -285,26 +253,33 @@
 
     </main>
 
-    <footer class="bg-dark text-white pt-3 pb-0">
-    <div class="container">
-        <!-- Top Footer Section -->
-        <div class="row">
-            <div class="col-12 d-flex flex-column align-items-center">
-                <ul class="list-unstyled d-inline-flex mb-3">
-                    <li><a href="#" class="text-white-50 text-decoration-none mx-3 small">Privacy Policy</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none mx-3 small">Terms of Service</a></li>
-                </ul>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <a href="index.html" class="footer-brand">HiTomorrow</a>
+                    <p class="small mb-0" style="max-width: 300px;">Premium residential space subscription starting from one month, HiTomorrow.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="rooms.html" class="footer-link">Rooms</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
             </div>
+            <div class="footer-divider"></div>
+            <p class="copyright">&copy; HiTomorrow 2025. All Rights Reserved.</p>
         </div>
-        
-        <!-- Bottom Footer Section -->
-        <div class="row text-start">
-            <div class="col-12">
-                <p class="text-white">Copyright &copy; HiTomorrow 2025</p>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
     
     
 </body>

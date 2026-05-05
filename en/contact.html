@@ -22,99 +22,117 @@
     <meta name="twitter:image" content="https://hitomorrow.netlify.app/images/hero_background.jpg">
     
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="../images/icons/favicon.svg">
+    <link rel="manifest" href="../site.webmanifest">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="/js/script.min.js" defer></script>
+    <script src="../js/script.min.js" defer></script>
 </head>
 <body>
-    <header class="p-3 bg-dark text-white">
-  <div class="container">
-    <div class="d-flex flex-wrap align-items-center justify-content-between">
-      <a href="/en/index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-        <span class="fs-4">HiTomorrow</span>
-      </a>
-      <ul class="nav ms-auto mb-2 mb-md-0">
-        <li><a href="/en/index.html" class="nav-link px-2 text-white">Home</a></li>
-        <li><a href="/en/rooms.html" class="nav-link px-2 text-white">Rooms</a></li>
-        <li><a href="/en/contact.html" class="nav-link px-2 text-white">Contact</a></li>
-        <li><a href="/contact.html" class="nav-link px-2 text-warning">한국어</a></li>
-      </ul>
-    </div>
-  </div>
-</header>
+    <!-- Floating Navigation -->
+    <nav class="nav-floating">
+        <div class="brand-text">HiTomorrow</div>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="rooms.html" class="nav-link">Rooms</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="../contact.html" class="nav-link text-warning">KR</a>
+    </nav>
 
     <main>
         
-<div class="container my-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-6 text-center border-end">
-                            <h4 class="mb-4">Contact via QR Code</h4>
-                            <a href="http://pf.kakao.com/_xhgETn?from=qr" target="_blank" rel="noopener noreferrer">
-                                <img src="/images/qr.png" alt="QR Code" class="img-fluid mb-3" style="max-width: 180px;">
-                            </a>
-                            <p class="text-muted small">Scan or click the QR code above<br>to contact us via KakaoTalk Channel.</p>
+        <!-- Contact Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-8 fade-in-up">
+                        <div class="text-center mb-5">
+                            <h2 class="display-6 fw-bold">Contact Us</h2>
+                            <p class="text-muted">Need help? Feel free to reach out via your preferred method.</p>
                         </div>
-                        <div class="col-md-6 d-flex flex-column justify-content-center p-4">
-                            <h4 class="mb-4">Additional Inquiries</h4>
-                            <ul class="list-unstyled">
-                                <li class="d-flex align-items-center mb-3">
-                                    <i class="bi bi-envelope-fill fs-4 me-3 text-primary"></i>
-                                    <div>
-                                        <strong>Email</strong><br>
-                                        <a href="mailto:qwer3596@naver.com" class="text-decoration-none text-dark">qwer3596@naver.com</a>
+                        
+                        <div class="card shadow-md border-0 overflow-hidden">
+                            <div class="row g-0">
+                                <!-- QR Code Section -->
+                                <div class="col-md-6 bg-light d-flex flex-column align-items-center justify-content-center p-5 border-end">
+                                    <h3 class="h5 fw-bold mb-4">Quick Contact via QR</h3>
+                                    <a href="http://pf.kakao.com/_xhgETn?from=qr" target="_blank" rel="noopener noreferrer" class="d-block p-3 bg-white rounded-4 shadow-sm mb-4 transition-hover">
+                                        <img src="../images/qr.png" alt="KakaoTalk QR Code" class="img-fluid" style="max-width: 180px;">
+                                    </a>
+                                    <p class="text-muted small text-center">
+                                        Scan the QR code with your smartphone<br>
+                                        to connect directly to our <span class="text-primary fw-semibold">KakaoTalk Channel</span>.
+                                    </p>
+                                </div>
+                                
+                                <!-- Contact Info Section -->
+                                <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
+                                    <h3 class="h5 fw-bold mb-4">Other Methods</h3>
+                                    
+                                    <div class="d-flex align-items-start mb-4">
+                                        <div class="bg-primary-light p-3 rounded-3 me-3">
+                                            <i class="bi bi-envelope-fill text-primary fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="h6 fw-bold mb-1">Email</h4>
+                                            <a href="mailto:qwer3596@naver.com" class="text-decoration-none text-muted small">qwer3596@naver.com</a>
+                                        </div>
                                     </div>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <i class="bi bi-clock-fill fs-4 me-3 text-primary"></i>
-                                    <div>
-                                        <strong>Operating Hours</strong><br>
-                                        24 hours
+                                    
+                                    <div class="d-flex align-items-start mb-4">
+                                        <div class="bg-primary-light p-3 rounded-3 me-3">
+                                            <i class="bi bi-clock-fill text-primary fs-4"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="h6 fw-bold mb-1">Hours</h4>
+                                            <p class="text-muted small mb-0">Open 24/7</p>
+                                        </div>
                                     </div>
-                                </li>
-                            </ul>
+                                    
+                                    <div class="mt-4">
+                                        <a href="http://pf.kakao.com/_xhgETn" target="_blank" class="btn btn-primary w-100 py-3">Start KakaoTalk Chat</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </section>
 
     </main>
 
-    <footer class="bg-dark text-white pt-3 pb-0">
-    <div class="container">
-        <!-- Top Footer Section -->
-        <div class="row">
-            <div class="col-12 d-flex flex-column align-items-center">
-                <ul class="list-unstyled d-inline-flex mb-3">
-                    <li><a href="#" class="text-white-50 text-decoration-none mx-3 small">Privacy Policy</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none mx-3 small">Terms of Service</a></li>
-                </ul>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <a href="index.html" class="footer-brand">HiTomorrow</a>
+                    <p class="small mb-0" style="max-width: 300px;">Premium residential space subscription starting from one month, HiTomorrow.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="rooms.html" class="footer-link">Rooms</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
             </div>
+            <div class="footer-divider"></div>
+            <p class="copyright">&copy; HiTomorrow 2025. All Rights Reserved.</p>
         </div>
-        
-        <!-- Bottom Footer Section -->
-        <div class="row text-start">
-            <div class="col-12">
-                <p class="text-white">Copyright &copy; HiTomorrow 2025</p>
-            </div>
-        </div>
-    </div>
-</footer>
-    
+    </footer>
     
 </body>
 </html>

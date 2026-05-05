@@ -4,204 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>HiTomorrow | Cozy Space Subscription Service</title>
+    <title>Rooms | HiTomorrow Premium Subscription</title>
     
-    <meta name="description" content="Subscribe to a comfortable space at HiTomorrow. We offer convenient accessibility, fully furnished options, flexible contract periods, and a non-contact system.">
+    <meta name="description" content="Explore HiTomorrow's premium residential spaces. Fully furnished, flexible contracts, and prime locations in Ilsan.">
     
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="HiTomorrow | Cozy Space Subscription Service">
-    <meta property="og:description" content="Subscribe to a comfortable space at HiTomorrow. We offer convenient accessibility, fully furnished options, flexible contract periods, and a non-contact system.">
+    <meta property="og:title" content="Rooms | HiTomorrow Premium Subscription">
+    <meta property="og:description" content="Explore HiTomorrow's premium residential spaces. Fully furnished, flexible contracts, and prime locations in Ilsan.">
     <meta property="og:image" content="https://hitomorrow.netlify.app/images/hero_background.jpg">
-    <meta property="og:url" content="https://hitomorrow.netlify.app/">
+    <meta property="og:url" content="https://hitomorrow.netlify.app/en/rooms.html">
     <meta property="og:type" content="website">
     
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="HiTomorrow | Cozy Space Subscription Service">
-    <meta name="twitter:description" content="Subscribe to a comfortable space at HiTomorrow. We offer convenient accessibility, fully furnished options, flexible contract periods, and a non-contact system.">
-    <meta name="twitter:image" content="https://hitomorrow.netlify.app/images/hero_background.jpg">
-    
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="../images/icons/favicon.svg">
+    <link rel="manifest" href="../site.webmanifest">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="../css/style.css?v=2.2">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="/js/script.min.js" defer></script>
+    <script src="../js/script.min.js" defer></script>
 </head>
 <body>
-    <header class="p-3 bg-dark text-white">
-  <div class="container">
-    <div class="d-flex flex-wrap align-items-center justify-content-between">
-      <a href="/en/index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-        <span class="fs-4">HiTomorrow</span>
-      </a>
-      <ul class="nav ms-auto mb-2 mb-md-0">
-        <li><a href="/en/index.html" class="nav-link px-2 text-white">Home</a></li>
-        <li><a href="/en/rooms.html" class="nav-link px-2 text-white">Rooms</a></li>
-        <li><a href="/en/contact.html" class="nav-link px-2 text-white">Contact</a></li>
-        <li><a href="/rooms.html" class="nav-link px-2 text-warning">한국어</a></li>
-      </ul>
-    </div>
-  </div>
-</header>
+    <!-- Floating Navigation -->
+    <nav class="nav-floating">
+        <div class="brand-text">HiTomorrow</div>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="rooms.html" class="nav-link active">Rooms</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="../rooms.html" class="nav-link text-warning">KR</a>
+    </nav>
 
-    <main>
-        
-<!-- 방 목록 -->
-<div class="container mt-5 mb-5">
-    <h2 class="mb-4">Available Rooms</h2>
-    <div class="row" id="room-list-container">
-        
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <div class="d-flex flex-wrap gap-1 position-absolute top-0 start-0 p-2">
-                    
-                    <span class="badge bg-secondary me-1">가성비</span>
-                    
-                    <span class="badge bg-secondary me-1">스탠다드</span>
-                    
-                </div>
-                <a href="static_rooms/room_1.html">
-                    <img src="/images/1/main.jpg" class="card-img-top" alt="스탠다드">
-                </a>
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">스탠다드</h5>
-                    <p class="card-text">혼자 여행객을 위한 완벽한 방입니다. 편안한 침대와 모든 필수 편의시설을 갖추고 있습니다.</p>
-                    
-                </div>
+    <main class="py-5">
+        <div class="container py-5">
+            <div class="mb-5 fade-in-up">
+                <h2 class="display-6 fw-bold">Available Spaces</h2>
+                <p class="text-muted">Discover the perfect premium space tailored for your lifestyle.</p>
             </div>
-        </div>
-        
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <div class="d-flex flex-wrap gap-1 position-absolute top-0 start-0 p-2">
-                    
-                    <span class="badge bg-secondary me-1">가성비</span>
-                    
-                    <span class="badge bg-secondary me-1">디럭스</span>
-                    
+            
+            <div class="row g-4">
+                <!-- Standard Room -->
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                        <div class="position-absolute top-0 start-0 p-3 z-3">
+                            <span class="badge bg-primary rounded-pill">Value</span>
+                            <span class="badge bg-dark rounded-pill">Standard</span>
+                        </div>
+                        <a href="static_rooms/room_1.html" class="overflow-hidden">
+                            <img src="../images/1/main.jpg" class="card-img-top hover-zoom" alt="Standard Room">
+                        </a>
+                        <div class="card-body p-4">
+                            <h3 class="h4 card-title fw-bold">Standard Room</h3>
+                            <p class="text-muted small mb-4">The perfect choice for solo travelers or professionals. Featuring essential premium amenities for your independent life.</p>
+                            <a href="static_rooms/room_1.html" class="btn btn-primary w-100 rounded-pill">View Details</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="static_rooms/room_2.html">
-                    <img src="/images/2/main.jpg" class="card-img-top" alt="디럭스 1">
-                </a>
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">디럭스 1</h5>
-                    <p class="card-text">커플이나 친구와 함께 사용하기 좋은 넓은 공간입니다. 퀸 사이즈 침대가 제공됩니다.</p>
-                    
+                
+                <!-- Deluxe Room 1 -->
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                        <div class="position-absolute top-0 start-0 p-3 z-3">
+                            <span class="badge bg-primary rounded-pill">Value</span>
+                            <span class="badge bg-dark rounded-pill">Deluxe</span>
+                        </div>
+                        <a href="static_rooms/room_2.html" class="overflow-hidden">
+                            <img src="../images/2/main.jpg" class="card-img-top hover-zoom" alt="Deluxe Room Type 1">
+                        </a>
+                        <div class="card-body p-4">
+                            <h3 class="h4 card-title fw-bold">Deluxe Room Type 1</h3>
+                            <p class="text-muted small mb-4">Spacious living optimized for couples or friends. Enjoy the elegant interior and premium queen-sized bed.</p>
+                            <a href="static_rooms/room_2.html" class="btn btn-primary w-100 rounded-pill">View Details</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <div class="d-flex flex-wrap gap-1 position-absolute top-0 start-0 p-2">
-                    
-                    <span class="badge bg-secondary me-1">가성비</span>
-                    
-                    <span class="badge bg-secondary me-1">디럭스</span>
-                    
+                
+                <!-- Deluxe Room 2 -->
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                        <div class="position-absolute top-0 start-0 p-3 z-3">
+                            <span class="badge bg-primary rounded-pill">Value</span>
+                            <span class="badge bg-dark rounded-pill">Deluxe</span>
+                        </div>
+                        <a href="static_rooms/room_3.html" class="overflow-hidden">
+                            <img src="../images/3/main.jpg" class="card-img-top hover-zoom" alt="Deluxe Room Type 2">
+                        </a>
+                        <div class="card-body p-4">
+                            <h3 class="h4 card-title fw-bold">Deluxe Room Type 2</h3>
+                            <p class="text-muted small mb-4">A modern sanctuary with a great city view. Designed for those seeking a balance between work and relaxation.</p>
+                            <a href="static_rooms/room_3.html" class="btn btn-primary w-100 rounded-pill">View Details</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="static_rooms/room_3.html">
-                    <img src="/images/3/main.jpg" class="card-img-top" alt="디럭스 2">
-                </a>
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">디럭스 2</h5>
-                    <p class="card-text">커플이나 친구와 함께 사용하기 좋은 넓은 공간입니다. 퀸 사이즈 침대가 제공됩니다.</p>
-                    
+                
+                <!-- Triple Room -->
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                        <div class="position-absolute top-0 start-0 p-3 z-3">
+                            <span class="badge bg-primary rounded-pill">Value</span>
+                            <span class="badge bg-dark rounded-pill">Triple</span>
+                        </div>
+                        <a href="static_rooms/room_4.html" class="overflow-hidden">
+                            <img src="../images/4/main.jpg" class="card-img-top hover-zoom" alt="Triple Room">
+                        </a>
+                        <div class="card-body p-4">
+                            <h3 class="h4 card-title fw-bold">Triple Room</h3>
+                            <p class="text-muted small mb-4">Ideal for small groups or families. A smart layout that values both community and individual privacy.</p>
+                            <a href="static_rooms/room_4.html" class="btn btn-primary w-100 rounded-pill">View Details</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <div class="d-flex flex-wrap gap-1 position-absolute top-0 start-0 p-2">
-                    
-                    <span class="badge bg-secondary me-1">가성비</span>
-                    
-                    <span class="badge bg-secondary me-1">트리플</span>
-                    
+                
+                <!-- Family Room -->
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                        <div class="position-absolute top-0 start-0 p-3 z-3">
+                            <span class="badge bg-primary rounded-pill">Family</span>
+                            <span class="badge bg-dark rounded-pill">Large</span>
+                        </div>
+                        <a href="static_rooms/room_5.html" class="overflow-hidden">
+                            <img src="../images/5/main.jpg" class="card-img-top hover-zoom" alt="Family Room">
+                        </a>
+                        <div class="card-body p-4">
+                            <h3 class="h4 card-title fw-bold">Family Room</h3>
+                            <p class="text-muted small mb-4">The ultimate space for families. Features a spacious living area and child-friendly interior design.</p>
+                            <a href="static_rooms/room_5.html" class="btn btn-primary w-100 rounded-pill">View Details</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="static_rooms/room_4.html">
-                    <img src="/images/4/main.jpg" class="card-img-top" alt="트리플">
-                </a>
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">트리플</h5>
-                    <p class="card-text">커플이나 친구와 함께 사용하기 좋은 넓은 공간입니다. 퀸 사이즈 침대가 제공됩니다.</p>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <div class="d-flex flex-wrap gap-1 position-absolute top-0 start-0 p-2">
-                    
-                    <span class="badge bg-secondary me-1">가성비</span>
-                    
-                    <span class="badge bg-secondary me-1">패밀리</span>
-                    
-                </div>
-                <a href="static_rooms/room_5.html">
-                    <img src="/images/5/main.jpg" class="card-img-top" alt="패밀리">
-                </a>
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">패밀리</h5>
-                    <p class="card-text">넓은 공간을 선호하시는 분들. 어린이 동반하시는 가족에 최적화된 실용적인 공간</p>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <div class="d-flex flex-wrap gap-1 position-absolute top-0 start-0 p-2">
-                    
-                    <span class="badge bg-secondary me-1">주차장</span>
-                    
-                </div>
-                <a href="static_rooms/room_6.html">
-                    <img src="/images/6/main.jpg" class="card-img-top" alt="주차장">
-                </a>
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">주차장</h5>
-                    <p class="card-text"></p>
-                    
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</div>
 
+                <!-- Parking Lot -->
+                <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                        <div class="position-absolute top-0 start-0 p-3 z-3">
+                            <span class="badge bg-secondary rounded-pill">Facility</span>
+                            <span class="badge bg-dark rounded-pill">Parking</span>
+                        </div>
+                        <a href="static_rooms/room_6.html" class="overflow-hidden">
+                            <img src="../images/6/main.jpg" class="card-img-top hover-zoom" alt="Parking Lot">
+                        </a>
+                        <div class="card-body p-4">
+                            <h3 class="h4 card-title fw-bold">Parking Lot</h3>
+                            <p class="text-muted small mb-4">Convenient parking facility for all residents. Enjoy direct building access and a well-lit environment.</p>
+                            <a href="static_rooms/room_6.html" class="btn btn-primary w-100 rounded-pill">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer class="bg-dark text-white pt-3 pb-0">
-    <div class="container">
-        <!-- Top Footer Section -->
-        <div class="row">
-            <div class="col-12 d-flex flex-column align-items-center">
-                <ul class="list-unstyled d-inline-flex mb-3">
-                    <li><a href="#" class="text-white-50 text-decoration-none mx-3 small">Privacy Policy</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none mx-3 small">Terms of Service</a></li>
-                </ul>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <a href="index.html" class="footer-brand">HiTomorrow</a>
+                    <p class="small mb-0" style="max-width: 300px;">Premium residential space subscription starting from one month, HiTomorrow.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="rooms.html" class="footer-link">Rooms</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    </ul>
+                </div>
             </div>
+            <div class="footer-divider"></div>
+            <p class="copyright">© HiTomorrow 2025. All Rights Reserved.</p>
         </div>
-        
-        <!-- Bottom Footer Section -->
-        <div class="row text-start">
-            <div class="col-12">
-                <p class="text-white">Copyright &copy; HiTomorrow 2025</p>
-            </div>
-        </div>
-    </div>
-</footer>
-    
-    
+    </footer>
 </body>
 </html>
