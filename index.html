@@ -7,7 +7,7 @@
     
     <title>HiTomorrow | 편안한 공간 구독 서비스</title>
     
-    <meta name="description" content="HiTomorrow에서 편안한 공간을 구독하세요. 편리한 접근성, 풀옵션, 유연한 계약 기간, 비대면 시스템을 제공합니다.">
+    <meta name="description" content="일산 킨텍스 및 고양종합운동장 인근 프리미엄 한달살기 및 공간 구독 서비스 HiTomorrow. 보증금 없는 풀옵션 단기 임대와 스마트 비대면 시스템 제공.">
     
     <!-- Open Graph Tags -->
     <meta property="og:title" content="HiTomorrow | 편안한 공간 구독 서비스">
@@ -23,6 +23,9 @@
     <meta name="twitter:image" content="https://hitomorrow.netlify.app/images/hero_background.jpg">
     
     <!-- Favicon -->
+    <link rel="alternate" hreflang="ko" href="https://hitomorrow.netlify.app/index.html" />
+    <link rel="alternate" hreflang="en" href="https://hitomorrow.netlify.app/en/index.html" />
+    <link rel="alternate" hreflang="x-default" href="https://hitomorrow.netlify.app/index.html" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
     <link rel="icon" type="image/svg+xml" href="images/icons/favicon.svg">
     <link rel="manifest" href="site.webmanifest">
@@ -33,6 +36,29 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="js/script.min.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "HiTomorrow",
+      "image": "https://hitomorrow.netlify.app/images/hero_background.jpg",
+      "description": "복잡한 계약 없이 시작하는 내일의 공간 구독 서비스, 하이투모로우",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "고양시 일산서구",
+        "addressLocality": "고양시",
+        "addressRegion": "경기도",
+        "postalCode": "10455",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.676138,
+        "longitude": 126.746055
+      },
+      "url": "https://hitomorrow.netlify.app/"
+    }
+    </script>
 </head>
 <body>
     <!-- Floating Navigation -->
@@ -62,7 +88,7 @@
                 </div>
                 <div class="col-lg-6 fade-in-up" style="animation-delay: 0.2s;">
                     <div class="hero-image-wrapper">
-                        <img src="images/hero_background.jpg" alt="Actual View from HiTomorrow">
+                        <img src="images/hero_background.jpg" alt="Actual View from HiTomorrow" fetchpriority="high" width="1200" height="800">
                         <div class="position-absolute bottom-0 start-0 p-4 w-100 bg-gradient-dark text-white">
                             <p class="small mb-0 opacity-75">Actual View from Our Room</p>
                         </div>
@@ -140,37 +166,37 @@
                     <div class="row g-4">
                         <div class="col-6 col-md-4">
                             <div class="facility-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal" data-large-src="images/facilities/kintex+Large.jpg">
-                                <img src="images/facilities/kintex+Large.jpg" alt="킨텍스">
+                                <img src="images/facilities/kintex+Large.jpg" alt="킨텍스" loading="lazy" width="400" height="300">
                             </div>
                             <p class="small text-center text-muted mt-2">킨텍스</p>
                         </div>
                         <div class="col-6 col-md-4">
                             <div class="facility-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal" data-large-src="images/facilities/Goyang+Sports+Large.jpg">
-                                <img src="images/facilities/Goyang+Sports+Large.jpg" alt="고양종합운동장">
+                                <img src="images/facilities/Goyang+Sports+Large.jpg" alt="고양종합운동장" loading="lazy" width="400" height="300">
                             </div>
                             <p class="small text-center text-muted mt-2">종합운동장</p>
                         </div>
                         <div class="col-6 col-md-4">
                             <div class="facility-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal" data-large-src="images/facilities/Starfield+MARKET+Large.jpg">
-                                <img src="images/facilities/Starfield+MARKET+Large.jpg" alt="스타필드 마켓">
+                                <img src="images/facilities/Starfield+MARKET+Large.jpg" alt="스타필드 마켓" loading="lazy" width="400" height="300">
                             </div>
                             <p class="small text-center text-muted mt-2">스타필드</p>
                         </div>
                         <div class="col-6 col-md-4">
                             <div class="facility-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal" data-large-src="images/facilities/One+Mount+Large.jpg">
-                                <img src="images/facilities/One+Mount+Large.jpg" alt="원마운트">
+                                <img src="images/facilities/One+Mount+Large.jpg" alt="원마운트" loading="lazy" width="400" height="300">
                             </div>
                             <p class="small text-center text-muted mt-2">원마운트</p>
                         </div>
                         <div class="col-6 col-md-4">
                             <div class="facility-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal" data-large-src="images/facilities/Paik+Hospital+Large.jpg">
-                                <img src="images/facilities/Paik+Hospital+Large.jpg" alt="일산백병원">
+                                <img src="images/facilities/Paik+Hospital+Large.jpg" alt="일산백병원" loading="lazy" width="400" height="300">
                             </div>
                             <p class="small text-center text-muted mt-2">일산백병원</p>
                         </div>
                         <div class="col-6 col-md-4">
                             <div class="facility-img-wrapper" data-bs-toggle="modal" data-bs-target="#imageModal" data-large-src="images/facilities/Lake+Park+Large.jpg">
-                                <img src="images/facilities/Lake+Park+Large.jpg" alt="일산호수공원">
+                                <img src="images/facilities/Lake+Park+Large.jpg" alt="일산호수공원" loading="lazy" width="400" height="300">
                             </div>
                             <p class="small text-center text-muted mt-2">호수공원</p>
                         </div>
@@ -271,8 +297,8 @@
                 <div>
                     <h4 class="footer-title">Legal</h4>
                     <ul class="footer-link-list">
-                        <li><a href="#" class="footer-link">개인정보 처리방침</a></li>
-                        <li><a href="#" class="footer-link">이용약관</a></li>
+                        <li><a href="privacy.html" class="footer-link">개인정보 처리방침</a></li>
+                        <li><a href="terms.html" class="footer-link">이용약관</a></li>
                     </ul>
                 </div>
             </div>
