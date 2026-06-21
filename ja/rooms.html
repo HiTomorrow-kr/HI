@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>お部屋一覧 | HiTomorrow</title>
+    
+    <meta name="description" content="一山KINTEX近郊のスタンダード、デラックス、トリプル、ファミリーなど、ライフスタイルに合わせたフルオプションお部屋の定期利用および短期居住プラン一覧。">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="お部屋一覧 | HiTomorrow">
+    <meta property="og:description" content="一山KINTEX近郊のスタンダード、デラックス、トリプル、ファミリーなど、ライフスタイルに合わせたフルオプションお部屋の定期利用および短期居住プラン一覧。">
+    <meta property="og:image" content="https://hitomorrow.netlify.app/images/hero_background.jpg">
+    <meta property="og:url" content="https://hitomorrow.netlify.app/ja/rooms.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="お部屋一覧 | HiTomorrow">
+    <meta name="twitter:description" content="HiTomorrowが提供する多様なプレミアム空間の一覧を確認し、あなたに最適な空間を見つけてください。">
+    <meta name="twitter:image" content="https://hitomorrow.netlify.app/images/hero_background.jpg">
+    
+    <!-- Favicon -->
+    <link rel="alternate" hreflang="ko" href="https://hitomorrow.netlify.app/rooms.html" />
+    <link rel="alternate" hreflang="en" href="https://hitomorrow.netlify.app/en/rooms.html" />
+    <link rel="alternate" hreflang="ja" href="https://hitomorrow.netlify.app/ja/rooms.html" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="../images/icons/favicon.svg">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../js/script.min.js" defer></script>
+</head>
+<body>
+    <!-- Floating Navigation -->
+    <nav class="nav-floating">
+        <div class="brand-text">HiTomorrow</div>
+        <a href="index.html" class="nav-link">ホーム</a>
+        <a href="rooms.html" class="nav-link active">お部屋一覧</a>
+        <a href="contact.html" class="nav-link">お問い合わせ</a>
+        <div class="dropdown d-inline-block">
+            <a href="#" class="nav-link dropdown-toggle p-0" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe me-1"></i>JA
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+                <li><a class="dropdown-item" href="../rooms.html">한국어</a></li>
+                <li><a class="dropdown-item" href="../en/rooms.html">English</a></li>
+                <li><a class="dropdown-item active" href="#">日本語</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        
+<!-- Room List Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="mb-5 fade-in-up">
+            <h2 class="display-6 fw-bold">登録されたお部屋一覧</h2>
+            <p class="text-muted">あなたにぴったりのプレミアムな空間をお選びください。</p>
+        </div>
+        
+        <div class="row g-4" id="room-list-container">
+            
+            <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.1s;">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 p-3 z-3">
+                        <span class="badge bg-primary">コスパ</span>
+                        <span class="badge bg-dark">スタンダード</span>
+                    </div>
+                    <a href="static_rooms/room_1.html" class="overflow-hidden">
+                        <img src="../images/1/main.jpg" class="card-img-top" alt="スタンダード" loading="lazy" width="400" height="300">
+                    </a>
+                    <div class="card-body p-4">
+                        <h3 class="h4 card-title fw-bold">スタンダードルーム</h3>
+                        <p class="text-muted small mb-4">1人旅やビジネスで来られたお客様に最適な独立した空間です。実用的なフルオプション設備をご体験ください。</p>
+                        <a href="static_rooms/room_1.html" class="btn btn-primary rounded-pill w-100">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.2s;">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 p-3 z-3">
+                        <span class="badge bg-primary">コスパ</span>
+                        <span class="badge bg-dark">デラックス</span>
+                    </div>
+                    <a href="static_rooms/room_2.html" class="overflow-hidden">
+                        <img src="../images/2/main.jpg" class="card-img-top" alt="デラックス 1" loading="lazy" width="400" height="300">
+                    </a>
+                    <div class="card-body p-4">
+                        <h3 class="h4 card-title fw-bold">デラックスルーム Type 1</h3>
+                        <p class="text-muted small mb-4">カップルやご友人同士でのご滞在に最適な広々とした空間です。洗練されたインテリアをご体験ください。</p>
+                        <a href="static_rooms/room_2.html" class="btn btn-primary rounded-pill w-100">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.3s;">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 p-3 z-3">
+                        <span class="badge bg-primary">コスパ</span>
+                        <span class="badge bg-dark">デラックス</span>
+                    </div>
+                    <a href="static_rooms/room_3.html" class="overflow-hidden">
+                        <img src="../images/3/main.jpg" class="card-img-top" alt="デラックス 2" loading="lazy" width="400" height="300">
+                    </a>
+                    <div class="card-body p-4">
+                        <h3 class="h4 card-title fw-bold">デラックスルーム Type 2</h3>
+                        <p class="text-muted small mb-4">さらにゆとりのある空間配置が自慢のデラックスルームです。快適な休息をお約束します。</p>
+                        <a href="static_rooms/room_3.html" class="btn btn-primary rounded-pill w-100">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.4s;">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 p-3 z-3">
+                        <span class="badge bg-primary">コスパ</span>
+                        <span class="badge bg-dark">トリプル</span>
+                    </div>
+                    <a href="static_rooms/room_4.html" class="overflow-hidden">
+                        <img src="../images/4/main.jpg" class="card-img-top" alt="トリプル" loading="lazy" width="400" height="300">
+                    </a>
+                    <div class="card-body p-4">
+                        <h3 class="h4 card-title fw-bold">トリプルルーム</h3>
+                        <p class="text-muted small mb-4">小グループやご家族連れのお客様に最適なゆとりのある空間です。プライバシーと共有スペースの価値が共存しています。</p>
+                        <a href="static_rooms/room_4.html" class="btn btn-primary rounded-pill w-100">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.5s;">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 p-3 z-3">
+                        <span class="badge bg-primary">ファミリー</span>
+                    </div>
+                    <a href="static_rooms/room_5.html" class="overflow-hidden">
+                        <img src="../images/5/main.jpg" class="card-img-top" alt="ファミリー" loading="lazy" width="400" height="300">
+                    </a>
+                    <div class="card-body p-4">
+                        <h3 class="h4 card-title fw-bold">ファミリールーム</h3>
+                        <p class="text-muted small mb-4">お子様連れのご家族のために設計された最適なお部屋です。広々としたリビングでおくつろぎください。</p>
+                        <a href="static_rooms/room_5.html" class="btn btn-primary rounded-pill w-100">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 fade-in-up" style="animation-delay: 0.6s;">
+                <div class="card h-100">
+                    <div class="position-absolute top-0 start-0 p-3 z-3">
+                        <span class="badge bg-dark">駐車場</span>
+                    </div>
+                    <a href="static_rooms/room_6.html" class="overflow-hidden">
+                        <img src="../images/6/main.jpg" class="card-img-top" alt="駐車場" loading="lazy" width="400" height="300">
+                    </a>
+                    <div class="card-body p-4">
+                        <h3 class="h4 card-title fw-bold">専用駐車場</h3>
+                        <p class="text-muted small mb-4">HiTomorrowをご利用のお客様のための便利な専用駐車スペースを運営しております。駐車の心配なく快適にご滞在ください。</p>
+                        <a href="static_rooms/room_6.html" class="btn btn-primary rounded-pill w-100">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand-col">
+                    <a href="index.html" class="footer-brand">HiTomorrow</a>
+                    <p class="small mb-0" style="max-width: 300px;">一山KINTEXおよび大化駅近くの短期賃貸ワンルーム・1ヶ月滞在向け宿泊施設、HiTomorrowです。</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Explore</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="index.html" class="footer-link">ホーム</a></li>
+                        <li><a href="rooms.html" class="footer-link">お部屋一覧</a></li>
+                        <li><a href="contact.html" class="footer-link">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="../privacy.html" class="footer-link">個人情報処理方針</a></li>
+                        <li><a href="../terms.html" class="footer-link">利用規約</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <p class="copyright mb-0">Copyright &copy; HiTomorrow 2025. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

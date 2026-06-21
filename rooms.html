@@ -24,6 +24,7 @@
     <!-- Favicon -->
     <link rel="alternate" hreflang="ko" href="https://hitomorrow.netlify.app/rooms.html" />
     <link rel="alternate" hreflang="en" href="https://hitomorrow.netlify.app/en/rooms.html" />
+    <link rel="alternate" hreflang="ja" href="https://hitomorrow.netlify.app/ja/rooms.html" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
     <link rel="icon" type="image/svg+xml" href="images/icons/favicon.svg">
     <link rel="manifest" href="site.webmanifest">
@@ -42,7 +43,16 @@
         <a href="index.html" class="nav-link">홈</a>
         <a href="rooms.html" class="nav-link active">방 목록</a>
         <a href="contact.html" class="nav-link">문의</a>
-        <a href="en/rooms.html" class="nav-link text-warning">EN</a>
+        <div class="dropdown d-inline-block">
+            <a href="#" class="nav-link dropdown-toggle p-0" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe me-1"></i>KO
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+                <li><a class="dropdown-item active" href="#">한국어</a></li>
+                <li><a class="dropdown-item" href="en/rooms.html">English</a></li>
+                <li><a class="dropdown-item" href="ja/rooms.html">日本語</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main>
